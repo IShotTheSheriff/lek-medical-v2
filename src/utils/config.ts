@@ -80,7 +80,7 @@ const config = yaml.load(fs.readFileSync('src/config.yaml', 'utf8')) as {
   analytics?: unknown;
 };
 
-const DEFAULT_SITE_NAME = 'NZOZ Lek-Medical Błażejczyk i Nowacka';
+const DEFAULT_SITE_NAME = 'Lek-Medical Błażejczyk i Nowacka';
 
 const getSite = () => {
   const _default = {

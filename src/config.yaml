@@ -1,6 +1,6 @@
 site:
-  name: NZOZ Lek-Medical Błażejczyk i Nowacka
-  site: 'https://astrowind.vercel.app'
+  name: Lek-Medical
+  site: 'https://lek-medical-v2.vercel.app/'
   base: '/'
   trailingSlash: false
 
