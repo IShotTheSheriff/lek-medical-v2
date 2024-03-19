@@ -35,6 +35,8 @@ const metadata = {
         > to miejsce, gdzie profesjonalizm spotyka się z ciepłą, przyjazną atmosferą. <br /><br />
         Jesteśmy Przychodnią Lekarza Rodzinnego świadczącą bezpłatne porady dla zadeklarowanych do naszej placówki pacjentów
         w ramach podpisanej umowy z NFZ.<br /><br />
+        Dzięki indywidualnemu podejściu naszego zespołu specjalistów, każdy pacjent otrzymuje opiekę na najwyższym poziomie,
+        dostosowaną do osobistych potrzeb.<br /><br />
         Stawiamy na empatię i nowoczesność w budowaniu zdrowej przyszłości dla naszych pacjentów.</span
       >
     </Fragment>
@@ -52,8 +54,8 @@ const metadata = {
       {
         title: 'Rejestracja wizyt',
         description:
-          '<a href="tel:817500990" target="_blank" rel="nofollow">81 750 09 90</a><br />' +
-          '<a href="tel:790717735" target="_blank" rel="nofollow">790 717 735</a><br /> ' +
+          '<br /><a class="font-bold" href="tel:817500990" target="_blank" rel="nofollow">81 750 09 90</a><br /><br />' +
+          '<a class="font-bold" href="tel:790717735" target="_blank" rel="nofollow">790 717 735</a><br /><br />' +
           'lub osobista na miejscu w przychodni',
         icon: 'tabler:phone',
       },
@@ -88,6 +90,11 @@ const metadata = {
         icon: 'tabler:stethoscope',
       },
       {
+        title: 'lek. med. Anna Danielkiewicz',
+        description: 'Pediatra.',
+        icon: 'tabler:stethoscope',
+      },
+      {
         title: 'lek. med. Beata Nazar',
         description: 'Specjalista Medycyny Rodzinnej.',
         icon: 'tabler:stethoscope',
@@ -109,13 +116,13 @@ const metadata = {
       },
       {
         title: 'lek. med. Beata Krasuska - Grzegorczyk',
-        description: 'W trakcie specjalizacji.',
+        description: 'W trakcie specjalizacji z kardiologii.',
         icon: 'tabler:stethoscope',
       },
       {
         title: 'mgr Marzena Szabała',
         description: 'Położna środowiskowa.',
-        icon: 'tabler:ribbon-health',
+        icon: 'tabler:baby-carriage',
       },
       {
         title: 'Krystyna Grenda',
@@ -143,26 +150,26 @@ const metadata = {
   <Steps
     id="night-care"
     title="Opieka nocna i świąteczna"
-    subtitle="W godzinach nocnych (18.00 - 8.00) oraz w dniach świątecznych nasi pacjenci mogą korzystać z pomocy lekarza rodzinnego w poniższych punktach."
+    subtitle="W godzinach nocnych (18.00 - 8.00) oraz w dniach ustawowo wolnych od pracy pacjenci mogą korzystać z pomocy lekarza rodzinnego w poniższych punktach."
     items={[
       {
         title:
-          '<a href="https://maps.app.goo.gl/QW478iD1fEFvcf3c7" target="_blank" rel="nofollow">Szpital WSS SPZOZ Lublin Al. Kraśnicka 100</a>',
+          '<a href="https://maps.app.goo.gl/QW478iD1fEFvcf3c7" target="_blank" rel="nofollow">Szpital WSS SPZOZ Lublin</a><br /><a href="https://maps.app.goo.gl/QW478iD1fEFvcf3c7" target="_blank" rel="nofollow">ul. Al. Kraśnicka 100</a>',
         description:
-          '<a href="tel:815374025" target="_blank" rel="nofollow">81 537 40 25</a><br /><a href="tel:519058752" target="_blank" rel="nofollow">519 058 752</a><br /><a href="tel:510058953" target="_blank" rel="nofollow">510 058 953</a>',
+          '<a href="tel:815374027" target="_blank" rel="nofollow">81 537 40 27</a><br /><a href="tel:815374032" target="_blank" rel="nofollow">81 537 40 32</a><br /><a href="tel:815374050" target="_blank" rel="nofollow">81 537 40 50</a>',
         icon: 'tabler:phone-plus',
       },
       {
         title:
-          '<a href="https://maps.app.goo.gl/ZhLh7KzThmTo2G5T8" target="_blank" rel="nofollow">Szpital Neuropsychiatryczny SPZOZ Lublin ul. Abramowicka 2</a>',
+          '<a href="https://maps.app.goo.gl/JaNPb1wm1hvyvFq28" target="_blank" rel="nofollow">Szpital WSS SPZOZ Lublin</a><br /><a href="https://maps.app.goo.gl/JaNPb1wm1hvyvFq28" target="_blank" rel="nofollow">ul. Biernackiego 9</a>',
+        description:
+          '<a href="tel:817604343" target="_blank" rel="nofollow">81 760 43 43</a><br /><a href="tel:817604345" target="_blank" rel="nofollow">81 760 43 45</a><br /><a href="tel:817604346" target="_blank" rel="nofollow">81 760 43 46</a><br /><a href="tel:817604347" target="_blank" rel="nofollow">81 760 43 47</a>',
+        icon: 'tabler:phone-plus',
+      },
+      {
+        title:
+          '<a href="https://maps.app.goo.gl/krmKS9pLmq3UhMx46" target="_blank" rel="nofollow">NZOZ Lublin</a><br /><a href="https://maps.app.goo.gl/krmKS9pLmq3UhMx46" target="_blank" rel="nofollow">ul. Abramowicka 2</a>',
         description: '<a href="tel:817286370" target="_blank" rel="nofollow">81 728 63 70</a>',
-        icon: 'tabler:phone-plus',
-      },
-      {
-        title:
-          '<a href="https://maps.app.goo.gl/kEfPyJvvq52RvtEm7" target="_blank" rel="nofollow">SPSW IM. Jana Bożego Lublin, ul. Biernackiego 9</a>',
-        description:
-          '<a href="tel:8176043443" target="_blank" rel="nofollow">81 740 20 39</a><br /><a href="tel:515752750" target="_blank" rel="nofollow">515 752 750</a>',
         icon: 'tabler:phone-plus',
       },
     ]}
