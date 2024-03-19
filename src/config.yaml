@@ -1,5 +1,5 @@
 site:
-  name: Lek-Medical
+  name: NZOZ Lek-Medical
   site: 'https://lek-medical-v2.vercel.app/'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Lek-Medical
+    default: NZOZ Lek-Medical
     template: '%s — AstroWind'
   description: 'Przychodnia zdrowia przyjazna pacjentom, NZOZ.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Lek-Medical
+    site_name: NZOZ Lek-Medical
     images:
       - url: '~/assets/images/default.png'
         width: 1200

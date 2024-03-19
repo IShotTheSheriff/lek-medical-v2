@@ -1,5 +1,5 @@
 import { getImage } from 'astro:assets';
-import { transformUrl, parseUrl } from 'unpic';
+import { parseUrl, transformUrl } from 'unpic';
 
 import type { ImageMetadata } from 'astro';
 import type { HTMLAttributes } from 'astro/types';
@@ -72,7 +72,7 @@ const parseAspectRatio = (aspectRatio: number | string | null | undefined): numb
       const [, num, den] = match.map(Number);
       if (den && !isNaN(num)) return num / den;
     } else {
-      const numericValue = parseFloat(aspectRatio);
+      const numericValue = Number.parseFloat(aspectRatio);
       if (!isNaN(numericValue)) return numericValue;
     }
   }
@@ -295,7 +295,11 @@ export async function getImagesOptimized(
     console.error('Image', image);
   }
 
-  let breakpoints = getBreakpoints({ width: width, breakpoints: widths, layout: layout });
+  let breakpoints = getBreakpoints({
+    width: width,
+    breakpoints: widths,
+    layout: layout,
+  });
   breakpoints = [...new Set(breakpoints)].sort((a, b) => a - b);
 
   const srcset = (await transform(image, breakpoints, Number(width) || undefined, Number(height) || undefined))

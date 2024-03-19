@@ -1,13 +1,13 @@
 ---
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Lek-Medical — Przychodnia zdrowia w Zemborzycach',
+  title: 'NZOZ Lek-Medical — Przychodnia Lekarza Rodzinnego w Zemborzycach',
   ignoreTitleTemplate: true,
 };
 ---
@@ -15,28 +15,30 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero id="info" actions={[]} image={{ src: '~/assets/images/building.png', alt: 'Lek-Medical Hero Image' }}>
+  <Hero id="info" actions={[]} image={{ src: '~/assets/images/building.jpeg', alt: 'Lek-Medical Hero Image' }}>
     <Fragment slot="title">Od 21 lat dbamy o Twoje zdrowie</Fragment>
   </Hero>
 
-  <Features2
+  <Features3
     id="about"
     tagline="O nas"
     title="Nasza placówka"
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: '~/assets/images/office.png',
+      alt: 'Lek-Medical About Image',
     }}
   >
     <Fragment slot="subtitle">
       <span
-        >Założony w styczniu 2003 roku, <span class="font-semibold">NZOZ Lek-Medical Błażejczyk i Nowacka</span> to miejsce,
-        gdzie profesjonalizm spotyka się z ciepłą, przyjazną atmosferą. <br /><br />Dzięki indywidualnemu podejściu
-        naszego zespołu specjalistów, każdy pacjent otrzymuje opiekę na najwyższym poziomie, dostosowaną do osobistych
-        potrzeb. <br /><br />Stawiamy na empatię i nowoczesność w budowaniu zdrowej przyszłości dla naszych pacjentów.</span
+        >Założony w styczniu 2003 roku, <span class="font-semibold"
+          >NZOZ Lek-Medical Błażejczyk i Nowacka "Spóła Partnerska - Lekarze"</span
+        > to miejsce, gdzie profesjonalizm spotyka się z ciepłą, przyjazną atmosferą. <br /><br />
+        Jesteśmy Przychodnią Lekarza Rodzinnego świadczącą bezpłatne porady dla zadeklarowanych do naszej placówki pacjentów
+        w ramach podpisanej umowy z NFZ.<br /><br />
+        Stawiamy na empatię i nowoczesność w budowaniu zdrowej przyszłości dla naszych pacjentów.</span
       >
     </Fragment>
-  </Features2>
+  </Features3>
 
   <Steps
     id="reception-hours"
@@ -50,7 +52,9 @@ const metadata = {
       {
         title: 'Rejestracja wizyt',
         description:
-          '<a href="tel:817500990" target="_blank" rel="nofollow">81 750 09 90</a> <br /> <a href="tel:790717735" target="_blank" rel="nofollow">790 717 735</a>',
+          '<a href="tel:817500990" target="_blank" rel="nofollow">81 750 09 90</a><br />' +
+          '<a href="tel:790717735" target="_blank" rel="nofollow">790 717 735</a><br /> ' +
+          'lub osobista na miejscu w przychodni',
         icon: 'tabler:phone',
       },
       {
@@ -71,7 +75,7 @@ const metadata = {
     id="team"
     tagline="Nasz zespół"
     title="Poznaj Naszych Specjalistów"
-    subtitle="Wybierając Lek-Medical Błażejczyk i Nowacka, stawiasz na wysoką jakość usług, dostępność lekarzy specjalistów i przyjazną atmosferę."
+    subtitle="Wybierając NZOZ Lek-Medical Błażejczyk i Nowacka, stawiasz na wysoką jakość usług, dostępność lekarzy specjalistów i przyjazną atmosferę."
     items={[
       {
         title: 'lek. med. Hanna Błażejczyk',
@@ -181,9 +185,17 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      <span class="sm:whitespace-nowrap">Lokalizacja</span>
+      <span class="sm:whitespace-nowrap">Kontakt</span>
     </Fragment>
 
-    <Fragment slot="subtitle">ul. Krężnicka 125A, 20 - 518 Lublin</Fragment>
+    <Fragment slot="subtitle">
+      <div>tel. <a class="font-bold" href="tel:817500990" target="_blank" rel="nofollow">81 750 09 90</a></div>
+      <div>tel komórkowy: <a class="font-bold" href="tel:790717735" target="_blank" rel="nofollow">790 717 735</a></div>
+      <div>
+        email: <a class="font-bold" href="mailto:lek_medical@op.pl" target="_blank" rel="nofollow">lek_medical@op.pl</a>
+      </div>
+      <br />
+      <div class="font-bold">ul. Krężnicka 125A, 20 - 518 Lublin</div>
+    </Fragment>
   </CallToAction>
 </Layout>
