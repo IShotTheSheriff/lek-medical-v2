@@ -19,11 +19,13 @@ export const headerData = {
       href: getPermalink('/#night-care'),
     },
     {
-      text: 'Lokalizacja',
+      text: 'Kontakt',
       href: getPermalink('/#location'),
     },
   ],
-  actions: [{ text: 'Umów wizytę', href: 'tel:790717735', target: '_blank' }],
+  actions: [
+    // { text: 'Umów wizytę', href: 'tel:790717735', target: '_blank' }
+  ],
 };
 
 export const footerData = {
@@ -35,7 +37,7 @@ export const footerData = {
         { text: 'Godziny pracy', href: '#reception-hours' },
         { text: 'Zespół', href: '#team' },
         { text: 'Opieka nocna', href: '#night-care' },
-        { text: 'Lokalizacja', href: '#location' },
+        { text: 'Kontakt', href: '#location' },
       ],
     },
   ],
@@ -52,6 +54,6 @@ export const footerData = {
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    Made by Gensou using AstroWind by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
   `,
 };
