@@ -19,6 +19,10 @@ export const headerData = {
       href: getPermalink('/#night-care'),
     },
     {
+      text: 'Standardy ochrony małoletnich',
+      href: getPermalink('/#standards'),
+    },
+    {
       text: 'Kontakt',
       href: getPermalink('/#location'),
     },
